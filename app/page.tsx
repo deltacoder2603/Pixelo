@@ -12,7 +12,7 @@ interface Thumbnail {
 }
 
 interface Video {
-  type: { video: string };
+  type: string;  
   videoId: string;
   title: string;
   channelId: string;
