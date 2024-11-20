@@ -14,7 +14,7 @@ interface Thumbnail {
 }
 
 interface Video {
-  type: string; // Adjusted type to string
+  type: string; 
   videoId: string;
   title: string;
   channelId: string;
@@ -60,9 +60,9 @@ const Page = () => {
   return (
     <section className="text-primary">
       <Navbar />
-      <div className="wrapper flex flex-col gap-5 ml-20 mr-20">
-        <div className="flex mt-5">
-          <div className="rounded-xl overflow-hidden w-full h-[600px]">
+      <div className="wrapper flex flex-col gap-5 mx-4 md:mx-20">
+        <div className="flex mt-5 justify-center">
+          <div className="rounded-xl overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[600px]">
             <ReactPlayer
               className="react-player"
               url={`https://www.youtube.com/watch?v=${id}`}
@@ -74,13 +74,11 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-3">
-          <h2 className="text-primary text-lg md:text-2xl">
-            {videoDetail?.title}
-          </h2>
+        <div className="flex flex-col gap-3 mt-4">
+          <h2 className="text-primary text-lg md:text-2xl">{videoDetail?.title}</h2>
           <Link
             href={`/channel/${videoDetail?.channelId}`}
-            className="flex gap-2 text-primary/80 text-base md:text-lg"
+            className="flex gap-2 text-primary/80 text-sm md:text-lg"
           >
             {videoDetail?.channelTitle}
           </Link>
@@ -91,15 +89,17 @@ const Page = () => {
             views
           </p>
         </div>
-        <hr />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+        <hr className="my-4" />
+        <div className="flex flex-col gap-4">
           <h3 className="text-primary text-lg md:text-2xl">Related Videos</h3>
           <Suspense fallback={<Loading />}>
-            {videos.map((data, idx) => (
-              <li key={idx} className="list-none">
-                <VideoCard video={data} />
-              </li>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {videos.map((data, idx) => (
+                <li key={idx} className="list-none">
+                  <VideoCard video={data} />
+                </li>
+              ))}
+            </div>
           </Suspense>
         </div>
       </div>
