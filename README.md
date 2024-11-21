@@ -1,4 +1,4 @@
-# Project Prithvi
+# Project Pixelo
 
 ![Pixelo Logo](https://cdn-icons-png.flaticon.com/128/4926/4926526.png)
 
