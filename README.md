@@ -2,7 +2,7 @@
 
 ![Pixelo Logo](https://cdn-icons-png.flaticon.com/128/4926/4926526.png)
 
-Welcome to Project Prithvi, a Next.js YouTube clone that brings the power of Next.js 15.0.3, Tailwind CSS, Framer Motion, and Axios together to deliver an immersive video browsing experience. Say goodbye to boring YouTube interfaces and hello to sleek design and smooth animations!
+Welcome to Project Pixelo, a Next.js YouTube clone that brings the power of Next.js 15.0.3, Tailwind CSS, Framer Motion, and Axios together to deliver an immersive video browsing experience. Say goodbye to boring YouTube interfaces and hello to sleek design and smooth animations!
 
 ## Features:
 
@@ -52,4 +52,4 @@ We utilize the YouTube API provided by [RapidAPI](https://rapidapi.com/ytjar/api
 
 ## Contributions:
 
-Contributions are welcome! Whether you want to fix a bug, add a feature, or improve documentation, feel free to submit a pull request. Together, we can make Project Prithvi even better.
+Contributions are welcome! Whether you want to fix a bug, add a feature, or improve documentation, feel free to submit a pull request. Together, we can make Project Pixelo even better.
