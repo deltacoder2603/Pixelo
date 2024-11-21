@@ -1,5 +1,7 @@
 # Project Pixelo
 
+[Live Demo](https://pixelodelta.vercel.app/)
+
 ![Pixelo Logo](https://cdn-icons-png.flaticon.com/128/4926/4926526.png)
 
 Welcome to Project Pixelo, a Next.js YouTube clone that brings the power of Next.js 15.0.3, Tailwind CSS, Framer Motion, and Axios together to deliver an immersive video browsing experience. Say goodbye to boring YouTube interfaces and hello to sleek design and smooth animations!
